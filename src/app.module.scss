@@ -1,0 +1,25 @@
+.app {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 256px;
+  // height: 128px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(200, 200, 200, 0.8);
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  .version {
+    text-align: end;
+    color: gray;
+  }
+
+  .form-item {
+    //
+  }
+}

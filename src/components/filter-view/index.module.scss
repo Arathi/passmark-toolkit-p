@@ -1,0 +1,46 @@
+.filter {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 32px;
+  --padding-bottom: 8px;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .regex {
+    @extend .row;
+    flex: 1;
+    // background-color: rgba(255, 0, 0, 0.1);
+
+    .pattern {
+      width: 100%;
+      border: 1px solid gray;
+
+      &.success {
+        background-color: rgba(0, 255, 0, 0.125);
+      }
+
+      &.failure {
+        background-color: rgba(255, 0, 0, 0.125);
+      }
+    }
+  }
+
+  .company {
+    @extend .row;
+    padding-top: var(--padding-bottom);
+    // background-color: rgba(0, 255, 0, 0.1);
+  }
+
+  .short {
+    @extend .row;
+    padding-top: var(--padding-bottom);
+    // background-color: rgba(0, 0, 255, 0.1);
+  }
+}
